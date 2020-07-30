@@ -108,3 +108,12 @@ Running on the cloud is best if you neither have nor want your own hardware for 
 [kubectl Cheat Sheet]: https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 [Kelsey Hightower]: https://twitter.com/kelseyhightower
 [Kubernetes The Hard Way]: https://github.com/kelseyhightower/kubernetes-the-hard-way
+
+
+## Copyright
+
+[![Creative Commons BY-NC-SA 4.0](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)][license]
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][license].
+
+[license]: http://creativecommons.org/licenses/by-nc-sa/4.0/
