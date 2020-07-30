@@ -23,7 +23,7 @@ This guide is structured around matching a Kubernetes offering around your exper
 - _[I have no idea what I'm doing.](#i-have-no-idea-what-im-doing)_
 - _[I want to use the same computer I do my work on.](#i-want-to-use-the-same-computer-i-do-my-work-on)_
 - _[I want to use my own hardware.](#i-want-to-use-my-own-hardware)_
-- _[I want to use _✨the cloud.✨_](#i-want-to-use-✨-the-cloud-✨)_
+- _[I want to use ✨the cloud.✨](#i-want-to-use-the-cloud)_
 
 ### I have no idea what I'm doing.
 
@@ -108,4 +108,3 @@ Running on the cloud is best if you neither have nor want your own hardware for 
 [kubectl Cheat Sheet]: https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 [Kelsey Hightower]: https://twitter.com/kelseyhightower
 [Kubernetes The Hard Way]: https://github.com/kelseyhightower/kubernetes-the-hard-way
-
