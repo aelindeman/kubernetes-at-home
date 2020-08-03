@@ -1,6 +1,6 @@
 # Kubernetes At Home!
 
-This guide is a curated list of tools to run and experiment with Kubernetes. It assumes you already have cursory knowledge of containerization and Docker, and its goal is to help you build your path forward.
+This guide is a curated list of tools to run and experiment with Kubernetes. It assumes you already have cursory knowledge of containerization and Docker, and its goal is to help you build your path forward based on your needs.
 
 ## What is Kubernetes?
 
@@ -27,7 +27,7 @@ This guide is structured around matching a Kubernetes offering around your exper
 
 ### I have no idea what I'm doing.
 
-That's okay! [Docker Desktop] and [minikube] both are great places to start. Both of them handle the nitty-gritty of Kubernetes administration for you, and enable you to ease your way into experimentation.
+That's okay! These options handle the nitty-gritty of Kubernetes administration for you, and enable you to ease your way into experimentation.
 
 - **[Docker Desktop]**
 
@@ -82,9 +82,13 @@ If you have hardware to spare, running Kubernetes directly can be an involved (b
 Running on the cloud is best if you neither have nor want your own hardware for Kubernetes, but can be cost-prohibitive in some cases.
 
 
-- **[DigitalOcean]** offers an easy-to-use, startup-scale managed Kubernetes offering.
+- **[DigitalOcean]**
 
-- **[Azure AKS]**, **[Google Cloud GKE]**, and **[Amazon EKS]** are among the many enterprise-scale managed Kubernetes offerings. Like any cloud service provider, they are highly configurable, but might be best only if your employer is footing the bill.
+  DigitalOcean offers an easy-to-use, startup-scale managed Kubernetes service. It is cheaper than most other cloud providers, putting it within reach for hobbyist or small business usage. Its associated costs (e.g., network bandwidth) may not scale as well as other cloud providers as your projects grow,but is unlikely to be an issue until you are running lots of applications.
+
+- **[Azure AKS]**, **[Google Cloud GKE]**, and **[Amazon EKS]**
+
+  These cloud service providers' enterprise-scale managed Kubernetes offerings are among the most popular. They are all highly configurable and can scale to meet any workload, but configuration can be daunting, and might be best only if your employer is footing the bill.
 
 [DigitalOcean]: https://www.digitalocean.com/products/kubernetes/
 [Azure AKS]: https://azure.microsoft.com/en-us/services/kubernetes-service/
@@ -92,7 +96,7 @@ Running on the cloud is best if you neither have nor want your own hardware for 
 [Google Cloud GKE]: https://cloud.google.com/kubernetes-engine/
 
 
-## Resources once you're set up
+## Resources to help you get set up
 
 - If the concept of Kubernetes is still confusing (and it's okay if it is!), read _[The Illustrated Children's Guide to Kubernetes]_ and _[Phippy Goes to the Zoo]_. Both books are published by the [Cloud Native Computing Foundation], the nonprofit organization that takes primary ownership of Kubernetes and some of its ecosystem of tools. Don't let the names fool you, they are great sources to help people of all ages understand Kubernetes.
 - The _[Learn Kubernetes Basics]_ section of the official Kubernetes docs will familiarize you with Kubernetes using [minikube]. It's part of the official Kubernetes documentation, so it will likely stay pretty up-to-date, and doesn't stray too far into any opinionated stance on infrastructure.
