@@ -27,7 +27,7 @@ This guide is structured around matching a Kubernetes offering around your exper
 
 ### I have no idea what I'm doing.
 
-That's okay! [Docker Desktop] and [MicroK8s] both are great places to start. Both of them handle the nitty-gritty of Kubernetes administration for you, and enable you to ease your way into experimentation.
+That's okay! [Docker Desktop] and [minikube] both are great places to start. Both of them handle the nitty-gritty of Kubernetes administration for you, and enable you to ease your way into experimentation.
 
 - **[Docker Desktop]**
 
@@ -50,7 +50,7 @@ If you have some experience with Kubernetes already, you might consider some mor
 
 - **[kind]**
 
-   kind is still in beta as of this writing in August 2020, but is looking to become a solid alternative to minikube. They are similar, but kind strips out the virtual machine aspect, and supports more than one node. It runs fully-featured Kubernetes nodes on your computer directly as Docker containers, using [kubeadm] within the node containers. This means kind offers a more production-like Kubernetes experience compared to minikube, but has additional complexity that may slow you down.
+   kind is still in beta as of this writing in August 2020, but is looking to become a solid alternative to minikube. The two are similar, but kind strips out the virtual machine aspect, and supports more than one node. It runs fully-featured Kubernetes nodes on your computer directly as Docker containers, using [kubeadm] within the node containers. This means kind offers a more production-like Kubernetes experience compared to minikube, but has additional complexity that may slow you down.
 
 - **[MicroK8s]**
 
@@ -67,11 +67,11 @@ If you have hardware to spare, running Kubernetes directly can be an involved (b
 
 - **[k3s]**
 
-  k3s is "five less than k8s," to emphasize what it abstracts away from vanilla Kubernetes — relatively tedious things like managing certificates, DNS, and ingress controllers. k3s is unique in that it's targeted at Raspberry Pi and similar microcomputers, so if you want a cluster but don't need a lot of horsepower, you can get up and running pretty without spending much money.
+  k3s is "five less than k8s," to emphasize what it abstracts away from vanilla Kubernetes — relatively tedious things like managing certificates, DNS, and ingress controllers. k3s is unique in that it's targeted at Raspberry Pi and similar microcomputers, so if you want a cluster but don't need a lot of horsepower, you can get up and running without spending much money.
 
 - **[kubeadm]**
 
-  kubeadm is the first-party utility for bootstrapping a Kubernetes cluster. It's not for the faint of heart; it is an incredibly powerful and complex tool. It gives you full control of provisioning (i.e., requires that you configure) a Kubernetes cluster — certificates, networking; literally everything Kubernetes offers — so it's only for those who love customization or the truly devoted.
+  kubeadm is the first-party utility for bootstrapping a Kubernetes cluster. It's not for the faint of heart; it is an incredibly powerful and complex tool. It gives you full control of provisioning (i.e. requires that you configure) a Kubernetes cluster — certificates, networking; literally everything Kubernetes offers — so it's only for those who love customization or the truly devoted.
 
 
 [k3s]: https://k3s.io/
@@ -84,7 +84,7 @@ Running on the cloud is best if you neither have nor want your own hardware for 
 
 - **[DigitalOcean]** offers an easy-to-use, startup-scale managed Kubernetes offering.
 
-- **[Azure AKS]**, **[Google Cloud GKE]**, and **[Amazon EKS]** are among many enterprise-scale managed Kubernetes offerings. Like any cloud service provider, they are highly configurable, but might be best only if your employer is footing the bill.
+- **[Azure AKS]**, **[Google Cloud GKE]**, and **[Amazon EKS]** are among the many enterprise-scale managed Kubernetes offerings. Like any cloud service provider, they are highly configurable, but might be best only if your employer is footing the bill.
 
 [DigitalOcean]: https://www.digitalocean.com/products/kubernetes/
 [Azure AKS]: https://azure.microsoft.com/en-us/services/kubernetes-service/
@@ -94,10 +94,10 @@ Running on the cloud is best if you neither have nor want your own hardware for 
 
 ## Resources once you're set up
 
-- If the concept of Kubernetes is still confusing (and it's okay if it is!), read _[The Illustrated Children's Guide to Kubernetes]_ and _[Phippy Goes to the Zoo]_. Both books are published by the [Cloud Native Computing Foundation], the nonprofit organization that takes primary ownership of Kubernetes and some of its ecosystem of tools.
-- The _[Learn Kubernetes Basics]_ section of the official Kubernetes docs that will familiarize you with Kubernetes using [minikube]. It's part of the official Kubernetes documentation, so it is unlikely to ever fall far out of date, and doesn't stray too far into any opinionated stance on infrastructure.
+- If the concept of Kubernetes is still confusing (and it's okay if it is!), read _[The Illustrated Children's Guide to Kubernetes]_ and _[Phippy Goes to the Zoo]_. Both books are published by the [Cloud Native Computing Foundation], the nonprofit organization that takes primary ownership of Kubernetes and some of its ecosystem of tools. Don't let the names fool you, they are great sources to help people of all ages understand Kubernetes.
+- The _[Learn Kubernetes Basics]_ section of the official Kubernetes docs will familiarize you with Kubernetes using [minikube]. It's part of the official Kubernetes documentation, so it will likely stay pretty up-to-date, and doesn't stray too far into any opinionated stance on infrastructure.
 - Also in the official documentation, the _[kubectl Cheat Sheet]_ is a useful guide for the things you'll find yourself doing most often with Kubernetes.
-- DigitalOcean [publishes several high-quality series of e-books](https://www.digitalocean.com/community/curriculums/kubernetes-for-full-stack-developers) for learning how to use and administer Kubernetes clusters, with series for both a platform operator's perspective and an application developer's.
+- DigitalOcean [publishes several high-quality e-book series](https://www.digitalocean.com/community/curriculums/kubernetes-for-full-stack-developers) for learning how to use and administer Kubernetes clusters, with series for both a platform operator's and an application developer's perspective.
 - [Kelsey Hightower], a developer advocate for Google Cloud, maintains of the most popular Kubernetes learning guides, _[Kubernetes The Hard Way]_. It emphasizes learning all of the individual aspects of Kubernetes rather than getting started quickly.
 
 
